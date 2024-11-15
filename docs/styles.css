@@ -1,0 +1,135 @@
+/* Estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f3640; /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator {
+    background-color: #1e272e; /* Fondo oscuro de la calculadora */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 400px; /* Agrandado */
+    text-align: center;
+}
+
+/* Título */
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Color dorado fuerte */
+    font-weight: 700;
+}
+
+/* Input y botones */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 5px;
+    border: 2px solid #27ae60; /* Verde intenso */
+    border-radius: 10px;
+    outline: none;
+    background-color: #34495e; /* Fondo oscuro del input */
+    color: #fff;
+}
+
+input:focus {
+    border-color: #f1c40f; /* Color dorado para el borde al hacer foco */
+}
+
+/* Botones para cambiar divisas */
+.currency-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.currency-btn {
+    background-color: #27ae60; /* Verde brillante */
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 48%;
+    transition: background-color 0.3s ease;
+}
+
+.currency-btn:hover {
+    background-color: #2ecc71; /* Verde más brillante al hacer hover */
+}
+
+/* Resultados de la conversión */
+.result {
+    margin-bottom: 30px;
+}
+
+#converted-amount {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f1c40f; /* Color dorado fuerte para mostrar el resultado */
+}
+
+/* Botón de reset */
+.reset-btn {
+    background-color: #e74c3c; /* Rojo brillante */
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b; /* Rojo más oscuro al hacer hover */
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .currency-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #converted-amount {
+        font-size: 30px;
+    }
+
+    .reset-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
